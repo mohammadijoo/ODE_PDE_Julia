@@ -550,9 +550,9 @@ If FFmpeg is not on PATH, MP4 encoding is skipped. You can encode manually:
 At the end of the workflow, you can watch the full implementation and walkthrough on YouTube.
 
 <!-- Replace YOUR_VIDEO_ID with your actual video ID -->
-<a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID" target="_blank">
+<a href="https://www.youtube.com/watch?v=f4hElz3-Cmw" target="_blank">
   <img
-    src="https://i.ytimg.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg"
+    src="https://i.ytimg.com/vi/f4hElz3-Cmw/maxresdefault.jpg"
     alt="ODE/PDE in Julia - Implementation Tutorial"
     style="max-width: 100%; border-radius: 10px; box-shadow: 0 6px 18px rgba(0,0,0,0.18); margin-top: 0.5rem;"
   />
