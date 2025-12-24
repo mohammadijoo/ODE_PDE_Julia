@@ -322,29 +322,19 @@ where $\phi &gt; 0$ defines the boundary layer thickness.
 Because the plant dynamics are nonlinear, the code uses a local affine approximation:
 
 1. Desired surface derivative:
-$$
-\dot{s}_{des} = -k\,\mathrm{sat}\left(\frac{s}{\phi}\right).
-$$
+$\dot{s}_{des} = -k\,\mathrm{sat}\left(\frac{s}{\phi}\right).$
 
 2. Local approximation:
-$$
-\dot{s}(u) \approx a u + b.
-$$
+$\dot{s}(u) \approx a u + b.$
 
 3. Numerical estimation (nominal, disturbance ignored):
-$$
-a \approx \dot{s}(1) - \dot{s}(0), \quad b \approx \dot{s}(0).
-$$
+$a \approx \dot{s}(1) - \dot{s}(0), \quad b \approx \dot{s}(0).$
 
 4. Solve for $u$:
-$$
-u_{smc} = \frac{\dot{s}_{des} - b}{a}.
-$$
+$u_{smc} = \frac{\dot{s}_{des} - b}{a}.$
 
 5. Apply saturation and add a gated centering term:
-$$
-u = \mathrm{clamp}(u_{smc} + u_{hold}, -u_{max}, u_{max}).
-$$
+$u = \mathrm{clamp}(u_{smc} + u_{hold}, -u_{max}, u_{max}).$
 
 ### 5) Cart-centering term with gating
 
